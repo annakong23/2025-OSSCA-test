@@ -1,4 +1,5 @@
 Visualizing Models, Data, and Training with TensorBoard
+TensorBoard로 모델, 데이터, 학습 시각화하기
 =======================================================
 
 In the `60 Minute Blitz <https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html>`_,
@@ -13,6 +14,19 @@ network training runs. This tutorial illustrates some of its
 functionality, using the
 `Fashion-MNIST dataset <https://github.com/zalandoresearch/fashion-mnist>`__
 which can be read into PyTorch using `torchvision.datasets`.
+
+**번역**: `공지원 <https://github.com/annakong23>`
+
+60 Minute Blitz <https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html>_에서는
+데이터를 불러와 nn.Module을 상속한 하위 클래스로 정의한 모델에 입력하고,
+이 모델을 학습 데이터로 훈련한 뒤 테스트 데이터로 평가하는 방법을 보여줍니다.
+
+훈련 과정에서 무슨 일이 일어나는지 확인하기 위해, 모델 학습 중에 몇 가지 통계를 출력하여
+학습이 잘 진행되고 있는지 감을 잡습니다. 하지만 이보다 훨씬 나은 방법이 있습니다.
+PyTorch는 신경망 학습 과정을 시각화하기 위해 설계된 도구인 TensorBoard와 통합되어 있기 때문입니다.
+
+이 튜토리얼에서는 그 기능 중 일부를 보여주며, torchvision.datasets를 통해 PyTorch에서 불러올 수 있는
+Fashion-MNIST 데이터셋 <https://github.com/zalandoresearch/fashion-mnist>__을 사용합니다.
 
 In this tutorial, we'll learn how to:
 
